@@ -17,9 +17,33 @@ To write a C program that replaces all odd elements of an array with `'O'`.
 5. Print each result separated by a space.
 
 ## 🧾Program
-Add Code Here
+```
+#include <stdio.h>
 
+int main() {
+    int i, n;
+    int a[100];
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    printf("Enter %d elements:\n", n);
+    for(i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+    printf("Result:\n");
+    for(i = 0; i < n; i++) {
+        if(a[i] % 2 != 0) {
+            printf("O ");
+        } else {
+            printf("%d ", a[i]);
+        }
+    }
+
+    return 0;
+}
+```
 ## Sample Output
+<img width="469" height="276" alt="image" src="https://github.com/user-attachments/assets/c889d2a8-f5e7-4969-a0e9-2c12af262971" />
 
 ## Result
+ C program that replaces all odd elements of an array with `'O'` is written.
 
